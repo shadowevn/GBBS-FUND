@@ -7,26 +7,34 @@ import random
 # This function returns a random number between 1 and 100
 # Usage: a = get_random_number()
 # a would be a random number between 1 and 100
+
+# a = [87, 7, 54, 42, 47, 4, 96, 23, 45, 53]
+
 def get_random_number():
     return random.randint(1, 100)
+
+print(get_random_number())
+
+
+
 
 
 # 1. Create a list of 10 random numbers between 1 and 100. Hint: Remeber how you can append(add) to a list.
 # Write your code below:
 
+# a = [87, 7, 54, 42, 47, 4, 96, 23, 45, 53]
 
 
+# # 2. Print the list of random numbers.
+# # Write your code below:
 
-# 2. Print the list of random numbers.
-# Write your code below:
-
-
-
-
-# 3. Print the sum of the list of random numbers.
-# Write your code below:
+# print(a)
 
 
+# # 3. Print the sum of the list of random numbers.
+# # Write your code below:
+
+# print(sum(a))
 
 
 # ---------------------------------------------------------
