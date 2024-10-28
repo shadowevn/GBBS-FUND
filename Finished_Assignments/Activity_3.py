@@ -8,33 +8,43 @@ import random
 # Usage: a = get_random_number()
 # a would be a random number between 1 and 100
 
-# a = [87, 7, 54, 42, 47, 4, 96, 23, 45, 53]
-
-def get_random_number():
-    return random.randint(1, 100)
-
-print(get_random_number())
-
-
-
-
 
 # 1. Create a list of 10 random numbers between 1 and 100. Hint: Remeber how you can append(add) to a list.
 # Write your code below:
 
-# a = [87, 7, 54, 42, 47, 4, 96, 23, 45, 53]
+def get_random_number():
+     return random.randint(1, 100)
+
+a = []
+
+for  i in range(10): 
+    a.append(get_random_number())
 
 
-# # 2. Print the list of random numbers.
-# # Write your code below:
+# # # 2. Print the list of random numbers.
+# # # Write your code below:
 
-# print(a)
+for i in range(len(a)):
+     print(a[i])
 
 
-# # 3. Print the sum of the list of random numbers.
-# # Write your code below:
+# # # 3. Print the sum of the list of random numbers.
+# # # Write your code below:
 
-# print(sum(a))
+# a[0] # First item in list
+
+# len(a) # Gives the length of the list
+
+# for i in range(10) # Loops 10 times
+#   # i goes from 0 - 9
+
+total = 0
+
+for i in range(len(a)):
+    #  total = total + a[i]
+    total += a[i]
+    print(total)
+     
 
 
 # ---------------------------------------------------------
@@ -68,10 +78,36 @@ print(get_random_number())
 
 # Write your code below:
 
+a = 0
+b = 0
 
+command = input("Select one of the following commands: add, subtract, multiply, divide, or exit:")
 
+print(command)
 
-
-
-
+while command != "exit":
+    if command == "add":
+        a = input("Enter your first number:")
+        b = input("Enter your second number:")
+        print(int(a) + int(b))
+        
+    elif command == "subtract":  
+        a = input("Enter your first number:")
+        b = input("Enter your second number:")
+        print(int(a) - int(b))
+        
+    elif command == "multiply":
+        a = input("Enter your first number:")
+        b = input("Enter your second number:")
+        print(int(a) * int(b))
+      
+    elif command == "divide":
+        a = input("Enter your first number:")
+        b = input("Enter your second number:")
+        print(int(a) / int(b))
+     
+    else:
+        print("Command doesn't exist.")
+    command = input("Enter a new command:")
+    
 
